@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+ body{
+    background-image:url(../res/back.png);
+ }
+
+#head{
+     background-image:linear-gradient(to bottom right,rgb(92, 238, 158),rgb(93, 241, 7));
+}
+
+#logo{
+    width: 48px;
+    height: 32px;
+}
+
+#web-cover{
+    /* border: 2px solid; */
+    /* background-image:url(../res/index2.jpg); */
+    background-size: cover;
+    /* background-color: rgb(165, 245, 133); */
+    
+    height: 100%;
+    /* border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px; */
+    overflow: hidden;
+    
+    position:relative;
+    top:0px;
+  
+    /* position:relative;top: -40px; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* opacity: 0.8; */
+}
+.carousel-item h5,.carousel-item p{
+    background-color: rgba(31, 30, 30, 0.774);
+}
+
+.district{
+    /* padding:10px; */
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    margin:15px;
+    /* border:2px solid black; */
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10%;
+    z-index: 3;
+    
+}
+.districts-bg{
+    position:absolute;
+    top:0px;
+    height:100% ;
+    width:100%;
+    background-color: gray;
+    z-index: 0;
+    border-radius: 2%;
+    /* background-image:linear-gradient(to bottom right,rgb(78, 82, 80),rgb(172, 240, 133)); */
+    opacity:0.4;
+}
+
+
+.district img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    position:relative;
+    z-index: 1;
+}
+.district-name{
+    position:absolute;
+ 
+    z-index:2;
+    bottom:0px;
+    height:12%;
+    width:100%;
+    transition: 1s ease;
+    
+}
+
+
+
+.district .odd{
+    background-color: teal;
+}
+
+.district .even{
+    background-color: maroon;
+}
+
+.district:hover .district-name{
+    height:100%;
+    opacity:0.8;
+
+}
+/* background-image:linear-gradient(to bottom right,rgb(92, 238, 158),rgb(93, 241, 7)) */

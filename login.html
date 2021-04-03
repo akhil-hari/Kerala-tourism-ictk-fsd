@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body style="background-image: url(res/back.png);">
+    <nav id="head" class="navbar navbar-expand-lg navbar-light" >
+        <a class="navbar-brand" href="#">
+          <img id="logo" src="res/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="districts.html">Districts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">SignUp</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="login.html">LogIn</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+<!-- login form -->
+      <div style="margin: auto;margin-top:8%;height:fit-content;width: 25%;/*background-color: rgba(225, 250, 218, 0.75)*/background-image:linear-gradient(to bottom right,rgb(92, 238, 158),rgb(93, 241, 7));padding:20px;border-radius: 5%;">
+        <form action="get">
+          <div class="form-group">
+            <h1 style="margin-left: 35%;">LogIn</h1>
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="/*background-color:rgb(93, 241, 7);color:rgb(41, 88, 14);border:0px;*/margin-left: 35%;" >Submit</button>
+          <br>
+          <br>
+          <a href="signup.html">I don,t have an account.</a>
+        </form>
+      </div>
+      <!-- login form ends -->
+    
+</body>
+</html>
