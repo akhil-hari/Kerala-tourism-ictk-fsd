@@ -29,7 +29,7 @@ function validate_phone(){
     else{
         phone.classList.toggle("is-valid",false);
         phone.classList.toggle("is-invalid",true);
-        phone_text.innerHTML="emails doesn't match.!";
+        phone_text.innerHTML="not a valid phone number";
     }
     
 }
